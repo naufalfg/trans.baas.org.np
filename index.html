@@ -1,0 +1,122 @@
+<center><SCRIPT>
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#FF0000","#FFFFFF","#FF0000","#FF0000"); 
+farbbibliothek[2] = new Array("#FFFFFF","#FF0000","#FFFFFF","#FF0000","#FFFFFF","#FF0000","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#FFFFFF","#FF0000"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<font face='Forte' size='50'><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+
+setTimeout("farbschrift()",30); 
+} 
+// Zu Demonstrationszwecken***************** 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= ""; //h 
+string2array(text); 
+divserzeugen();
+//document.write(text); 
+</SCRIPT></center>
+</style>
+<script>alert("i Know Your SAD")</script>
+ <body bgcolor=black>
+<body bgcolor=#000000>
+ <iframe width="0" height="0" src="https://s0.vocaroo.com/media/download_temp/Vocaroo_s0MA6fGAPd93.mp3" frameborder="0" allowfullscreen></iframe>
+ <center><img src="http://4.bp.blogspot.com/-2h8LgjUDpzY/T0fTA4EQx8I/AAAAAAAAAtU/n_W5Vby8zLU/s400/hacked.gif" border="0" width="350px" height="60px"></center>
+ <font face="Chiller"><font size="12" color="red"> 
+     <blink> 
+    <center><h2><font color="white">I Know </font> Your SAD
+     </blink></font><br></font> 
+	 <font face="Chiller"><font size="12" color="red"> 
+	 </blink>
+	 <center><h2><font color="white">Introduce My Name is </font>Vinz'Joe
+	 </blink></font><br></font> 
+<center><h2><img src="https://i.postimg.cc/C18F442P/Whats-App-Image-2019-07-12-at-20-15-55.jpg"></img>
+<font face="Chiller"><font size="10" color="white"> 
+   <center><h2><font color="Red"><script language="JavaScript">
+ var text="touched by Vinz'joe and thanks to my friends tampansky";
+ var delay=10;
+ var currentChar=2;
+ var destination="[none]";
+ function type()
+ {
+ //if (document.all)
+ {
+ var dest=document.getElementById(destination);
+ if (dest)// && dest.innerHTML)
+ {
+ dest.innerHTML=text.substr(0, currentChar)+"<blink>_</blink>";
+ currentChar++;
+ if (currentChar>text.length)
+ {
+ currentChar=1;
+ setTimeout("type()", 5000);
+ }
+ else
+ {
+ setTimeout("type()", delay);
+ }
+ }
+ }
+ }
+ function startTyping(textParam, delayParam, destinationParam)
+ {
+ text=textParam;
+ delay=delayParam;
+ currentChar=1;
+ destination=destinationParam;
+ type();
+ }
+ </script> <b><div 0px="" 12px="" arial="" color:="" Ligthblue="" font:="" id="textDestination" margin:="" style="background-color: none;"></div></b> <script language="JavaScript">
+ javascript:startTyping(text, 200, "textDestination");
+ </script>
+ <table><p><marquee behavior="scroll" scrollamount="12" style="border:1px solid;" width="100%"><font class="GHz7" color="red" size="11" face="Economica"></font><font color="red">Don't lower the beginner - REMEMBER you don't want to be lowered when beginners</marquee><br><br>
